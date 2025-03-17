@@ -6,12 +6,14 @@ let guess;
 let computerNumber;
 computerNumber = Math.floor(Math.random() * 100)
 
+let tries = document.getElementById("tries");
+
+/* work out how to display number of tries */
 
 submitInput.onclick = function(){
     
     guess = textInput.value;
     console.log(computerNumber)
-
 
     if(guess < computerNumber){
         console.log("higher")
