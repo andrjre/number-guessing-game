@@ -4,14 +4,15 @@ let submitInput = document.getElementById("submitInput");
 let result = document.getElementById("result");
 let guess;
 let computerNumber;
+let numberOfTries = 0;
+let tries;
 computerNumber = Math.floor(Math.random() * 100)
-
-let tries = document.getElementById("tries");
-
-/* work out how to display number of tries */
 
 submitInput.onclick = function(){
     
+    numberOfTries = ++ numberOfTries;
+    tries = document.getElementById("tries").innerHTML = `Number of guesses: ${numberOfTries}`;
+
     guess = textInput.value;
     console.log(computerNumber)
 
@@ -24,12 +25,11 @@ submitInput.onclick = function(){
         result.textContent = "The computers number is lower."
     }
     else if (guess == computerNumber){
-        console.log("Well Done!")
-        result.textContent = "Well Done!"
+        console.log("Well Done!");
+        result.textContent = "Well Done!";
+        tries = document.getElementById("tries").innerHTML = `It took you ${numberOfTries} tries to guess the number!`;
+        
     }
-
-
-
 
 
 
