@@ -31,6 +31,7 @@ submitInput.onclick = function(){
         
     }
 
-
+    // work on making higher and lower font colors green and red respectively //
+    // possible animation on completion //
 
 }
