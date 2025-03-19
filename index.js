@@ -26,12 +26,13 @@ submitInput.onclick = function(){
     }
     else if (guess == computerNumber){
         console.log("Well Done!");
-        result.textContent = "Well Done!";
+        result.textContent = `Well Done! The number was ${computerNumber}!`;
         tries = document.getElementById("tries").innerHTML = `It took you ${numberOfTries} tries to guess the number!`;
-        
     }
 
     // work on making higher and lower font colors green and red respectively //
     // possible animation on completion //
+    // reset button also //
+    
 
 }
